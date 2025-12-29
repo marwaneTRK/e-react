@@ -1,10 +1,15 @@
 // import logo from "./logo.svg";
 import "./App.css";
-import MainLayout from "../src/components/layout/MainLayout";
-import Home from "./pages/public/Home";
+import PublicRoutes from "./router/PublicRoutes";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  return <Home />;
+  return (
+    <Router>
+      <Routes>
+        <Route path="/*" element={<PublicRoutes />} />
+      </Routes>
+    </Router>
+  );
 }
-
 export default App;

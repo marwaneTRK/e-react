@@ -2,6 +2,7 @@ import { useState } from "react";
 import { products } from "../../api/products";
 import ProductCard from "../../components/common/ProductCard";
 import SearchBar from "../../components/ui/SearchBar";
+import MainLayout from "../../components/layout/MainLayout";
 
 export default function HomePage() {
   const [search, setSearch] = useState("");
