@@ -1,7 +1,10 @@
-import Navbar from "./components/layout/Navbar";
+import logo from "./logo.svg";
+import "./App.css";
+import MainLayout from "./components/layouts/MainLayout";
+import Home from "./pages/public/Home";
 
 function App() {
-  return <div className="w-screen h-screen bg-amber-900">tst</div>;
+  return <Home />;
 }
 
 export default App;
